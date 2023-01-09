@@ -47,7 +47,8 @@ GitHub Repo URL: https://github.com/Josh236061/work-day-scheduler-2/
 
 Publish Website URL: 
 
-Screenshot of Published Project:
-![image](https://user-images.githubusercontent.com/71394743/191837912-8945d257-9911-4f0a-8099-122979a140e3.png)
+Screenshot:
+![image](https://user-images.githubusercontent.com/71394743/211387550-29c1ea05-7098-4793-aa30-0e09ba8f4317.png)
+
 
 
