@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+
+    </style>
+    <title>Work Day Scheduler</title>
+  </head>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+    </div>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <div class="col-sm-2 hour">9:00 AM</div>
+        <div class="col-sm-8 description">
+          <textarea></textarea>
+        </div>
+        <div class="col-sm-2 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      
+      <div class="container">
+        <!-- Timeblocks go here -->
+        <div class="row time-block">
+          <div class="col-sm-2 hour">7:00 AM</div>
+          <div class="col-sm-8 description">
+            <textarea></textarea>
+          </div>
+          <div class="col-sm-2 saveBtn">
+            <i class="far fa-save"></i>
+          </div>
+          <div class="container">
+            <!-- Timeblocks go here -->
+            <div class="row time-block">
+              <div class="col-sm-2 hour">8:00 AM</div>
+              <div class="col-sm-8 description">
+                <textarea></textarea>
+              </div>
+              <div class="col-sm-2 saveBtn">
+                <i class="far fa-save"></i>
+              </div>
+              <div class="container">
+                <!-- Timeblocks go here -->
+                <div class="row time-block">
+                  <div class="col-sm-2 hour">9:00 AM</div>
+                  <div class="col-sm-8 description">
+                    <textarea></textarea>
+                  </div>
+                  <div class="col-sm-2 saveBtn">
+                    <i class="far fa-save"></i>
+                  </div>
+                  <div class="container">
+                    <!-- Timeblocks go here -->
+                    <div class="row time-block">
+                      <div class="col-sm-2 hour">10:00 AM</div>
+                      <div class="col-sm-8 description">
+                        <textarea></textarea>
+                      </div>
+                      <div class="col-sm-2 saveBtn">
+                        <i class="far fa-save"></i>
+                      </div>
+                      <div class="container">
+                        <!-- Timeblocks go here -->
+                        <div class="row time-block">
+                          <div class="col-sm-2 hour">11:00 AM</div>
+                          <div class="col-sm-8 description">
+                            <textarea></textarea>
+                          </div>
+                          <div class="col-sm-2 saveBtn">
+                            <i class="far fa-save"></i>
+                          </div>
+                          <div class="container">
+                            <!-- Timeblocks go here -->
+                            <div class="row time-block">
+                              <div class="col-sm-2 hour">12:00 AM</div>
+                              <div class="col-sm-8 description">
+                                <textarea></textarea>
+                              </div>
+                              <div class="col-sm-2 saveBtn">
+                                <i class="far fa-save"></i>
+                              </div>
+                              <div class="container">
+                                <!-- Timeblocks go here -->
+                                <div class="row time-block">
+                                  <div class="col-sm-2 hour">13:00 AM</div>
+                                  <div class="col-sm-8 description">
+                                    <textarea></textarea>
+                                  </div>
+                                  <div class="col-sm-2 saveBtn">
+                                    <i class="far fa-save"></i>
+                                  </div>
+    <script src="moment.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
