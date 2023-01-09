@@ -1,6 +1,28 @@
 // Get the current time
 var currentTime = moment();
 
+ // current day is displayed at the top of the calendar
+ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+ 
+ // each time block is color-coded to indicate whether it is in the past, present, or future
+ function timeBlockColor() {
+     var hour = moment().hours();
+ 
+     $(".time-block").each(function() {
+         var currHour = parseInt($(this).attr("id"));
+ 
+         // console.log(this); //each time-block
+ 
+         if (currHour > hour) {
+             $(this).addClass("future");
+         } else if (currHour === hour) {
+             $(this).addClass("present");
+         } else {
+             $(this).addClass("past");
+         }
+     })
+ };
+
 function updateTimeBlocks() {
   // Loop through each time block
   $('.time-block').each(function() {
@@ -35,6 +57,23 @@ function saveEvent() {
 
     // Store the event in local storage with the time label as the key
     localStorage.setItem(timeLabel, event);
+  });
+}
+
+ // WHEN I refresh the page
+ // THEN the saved events persist
+ function usePlanner() {
+ 
+  $(".hour").each(function() {
+      var currHour = $(this).text();
+      var currPlan = localStorage.getItem(currHour);
+
+      // console.log(this);
+      // console.log(currHour);
+
+      if(currPlan !== null) {
+          $(this).siblings(".plan").val(currPlan);
+      }
   });
 }
 
