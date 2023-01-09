@@ -1,4 +1,4 @@
-# work-day-scheduler-2
+# Work Day Scheduler 2
 Rice Bootcamp Challenge Assignment 5: Work Day Scheduler [AT. 2]
 
 ## Introduction
@@ -45,7 +45,7 @@ THEN the saved events persist
 
 GitHub Repo URL: https://github.com/Josh236061/work-day-scheduler-2/
 
-Publish Website URL: 
+Publish Website URL: https://josh236061.github.io/work-day-scheduler-2/
 
 Screenshot:
 ![image](https://user-images.githubusercontent.com/71394743/211387550-29c1ea05-7098-4793-aa30-0e09ba8f4317.png)
